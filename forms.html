@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="signup.html" method="get">
+        <div>
+            <label for="username">User name</label>
+            <input name="username" id="username" type="text" value="@ex:vishnu" required></div>
+        <div>
+            <label for="password">password</label>
+            <input name="password" id="password" type="password" placeholder="password" maxlength="7" required></div>
+            <div>
+                <label for="date of birth">date of birth</label>
+                <input type="date" name="date of birth" id="date of birth" min="29-12-1990">
+            </div>
+            <div>
+                <label for="year of birth">year of birth</label>
+                <input type="number" name="year of birth" id="year of birth" maxlength="4" min="1950" max="2026">
+            </div>
+            <div>
+                <label for="email">email</label>
+                <input type="email" name="email" id="email" placeholder="abc@gmail.com">
+            </div>
+            <div>
+                <label for="about">about</label>
+                <textarea name="about" id="about" cols="20" rows="10"> About me....</textarea>
+            </div>
+            <div>
+
+                <input type="checkbox" name="smsalert" id="smsalert">
+                <label for="smsalert">SMS alert</label>
+            </div>
+            <div>
+                
+                <input type="checkbox" name="emailalert" id="emailalert">
+                <label for="emailalert">email alert</label>
+            </div>
+            <div>
+                
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+            </div>
+            <div>
+                
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female"> female</label>
+                
+            </div>
+            <div>
+                <select name="state" id="state">
+                    <option value="TN">TN</option>
+                    <option value="AP" label="AP"></option>
+                </select>
+            </div>
+            <div>
+                <label for="Resume">Resume</label>
+                <input type="file" id="file" name="file">
+            </div>
+        <input type="image" src="https://www.freeiconspng.com/uploads/submit-button-png-4.jpg" width="100">
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
