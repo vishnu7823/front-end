@@ -1,0 +1,18 @@
+
+
+
+/* .p1{
+    font: size 20px;
+}
+
+.p2{
+    font-size: 2rem;
+} */
+
+
+.box{
+    /* width:50vw; */
+    width:50vmax;
+    height:50vh;
+    border:2px solid black;
+}
