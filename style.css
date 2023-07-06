@@ -1,40 +1,62 @@
-ul{
-    /* list-style-type: circle; */
-    list-style-position:outside ;
-}
-
-ol{
-    list-style-type:  upper-roman;
-}
-
-li{
-    margin:10px;
-}
-
-table{
-    width:300px;
-    margin:auto;
-    border-spacing: 10px 20px;
-    border-collapse:separate;
-}
-
-th{
-    text-transform: uppercase;
-    text-align: left;
-    border-bottom: 2px solid black;
-    padding:10px; 
+body{
+    background: url("");
+    background-color: rgb(110, 107, 107);
     
+
 }
 
-td{
-    padding:10px;
-    border:1px solid black;
+.regform{
+    width:500px;
+    margin:250px auto;
+    padding:10px 20px 30px;
+    background-color: rgba(0, 0, 0, .5);
+    color:white;
+    font-size:30px;
+    border-radius: 5px;
 }
 
-.amt{
-    text-align:right;
+.regform h3{
+    text-align: center;
+    color:#E29578;
+   
 }
 
-tr:nth-child(odd){
-    background-color: whitesmoke;
+.regform  .text{
+    display:block;
 }
+
+.input input{
+    width:100%;
+    font-size:1.5em;
+    border: 1px solid #006d77;
+    border-radius: 8px;
+    padding 10px 10px;
+    border-sizing:border-box;
+    margin:5px 0px 15px;
+}
+
+input:focus{
+    background-color: aquamarine;
+}
+
+.btn{
+    text-align: center;
+}
+
+button{
+    background-color: aqua;
+    font-size: 30px;
+    color:beige;
+    margin-top: 20px;
+    padding:15px 25px;
+    border-radius:8px;
+    border:1px solid blanchedalmond;
+    box-shadow: 2px;
+}
+
+.radio input{
+    accent-color: #83c5BE;
+    transform:scale(1.5)
+}
+
+
