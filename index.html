@@ -20,26 +20,29 @@
     
      <div class="row">
         <div class="col-md-12">
-          <h1>Bootstrap Collapse</h1> 
-        <button class="btn btn-success"data-toggle="collapse" data-target="#box">Click Me</button>
-        <div id="box" class="collapse" style="background-color:teal;color: white;">
-        <p>Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. 
-            In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.
-             A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). 
-             Length and appearance do not determine whether a section in a paper is a paragraph. 
-             For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. 
-             Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph.</p>
-            </div>
-            <hr>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <a href="#box2" data-toggle="collapse">Heading</a>
-                </div>
-                <div id="box2" class="panel-collapse collapse">
-                    <div class="panel-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut error dolore reiciendis tempore excepturi hic deleniti quod aut eaque voluptate quia accusamus, saepe unde distinctio suscipit autem dolorum. Repellendus, maiores?</div>
-                    <div class="panel-footer">Footer</div>
-                </div>
-            </div>
+          <h1>Bootstrap Tabs</h1> 
+         <hr>
+         <ul class="nav nav-tabs">
+            <li><a href="#">Menu-1</a></li>
+            <li class="active"><a href="#">Menu-2</a></li>
+            <li><a href="#">Menu-3</a></li>
+            <li><a href="#">Menu-4</a></li>
+         </ul> 
+
+         <hr>
+         <ul class="nav nav-tabs">
+            <li><a href="#">Menu-1</a></li>
+            <li class="active"><a href="#">Menu-2</a></li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu-3<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li>item</li>
+                <li>item</li>
+            </ul>
+            </li>
+            <li><a href="#">Menu-4</a></li>
+         </ul> 
+
+       </div>
         </div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
