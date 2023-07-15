@@ -1,85 +1,122 @@
-/*operators
------------------
+//arrays
 
-arithmetic operators: + - *,/ % ++ -- **  */
+let num=10
+let name="vishnu"
 
-// let a=3;
+let cities=[ "chennai","madurai","namakkal"];
+ 
+let marks=[78,90,99];
+console.log(marks.length)
 
-// let x=(a**3)
+console.log(cities[2])
+console.log(cities)
+//last elemnt
+console.log(marks[marks.length-1])
 
-// console.log("x=" +x)
+//mix of int strings
 
+let arr=[5,7,8,"vishnu",[3,4]]
 
-// let b=5;
-// let y=(--b)
-// console.log(+b)
+console.log(arr)
+console.log(arr[4][1])
 
-// let c=5;
-// let z=(c--)
-// console.log(+z)
+//2d array
 
+let matrix=[[1,2,3],[5,6,7],[9,8,0]]
+console.log(matrix[1][2])
 
-// let d=5
-// let p=(d++)
-// console.log(+p)
+//arr methods
+let array=["a",'b','c','d','e']
 
-//asssignment operators: = += -= *= /= %= **=//
-
-// let a=10
-// let x=(a+=3)
-// console.log(+x)
-
-// let b=10
-// let y=(b-=3)
-// console.log(+y)
-
-// let c=10
-// let z=(c*=3)
-// console.log(+z)
-
-// let d=10
-// let p=(d/=5)
-// console.log(+p)
-
-// let e=10
-// let q=(e%=3)
-// console.log(+q)
-
-// let f=10
-// let r=(f**=3)
-// console.log(+r)
+//push-add elements to the end
+array.push('f')
+console.log(array)
 
 
-//comaprison operators:== === != !== > < >= <= ??
+//pop-remove elements from the end and returns removed value
 
-// let a= 5
-// let x=(a==10)
-// console.log(+x)
+console.log(array.pop())
+console.log(array)
 
-// let b=10
-// let y=(b>=30)
-// console.log(+y)
+//shift-remove element from start of the array
+//returns removed value
+
+console.log(array.shift())
+console.log(array)
+
+//unshift -adds elements to the start of the array
+//return new lengths
+
+console.log(array.unshift('a'))
+console.log(array)
+
+//delete
+delete array[2]
+console.log(array)
+console.log(array[2])
+
+//splice-delete
+
+array.splice(2,2)
+console.log(array)
+
+//splice-replace
+
+array.splice(1,1,'m')
+console.log(array)
+
+array.splice(1,2,'s','h')
+console.log(array)
+
+array.splice(1,0,'b')
+console.log(array)
 
 
-//logical operator : && || ! 
+//slice method
+//slice(start index,ending index)
+//ending index not included
+
+console.log(array.slice(3,-1))
+
+//revrese
+array.reverse()
+console.log(array)
+
+//join-converts array to string
+
+let str = array.join()
+console.log(str)
+
+//split-converts striong into array
+
+let str2="g,t,r,e"
+str2.split(',')
+let arr1=str2.split(',')
+console.log(arr1)
+
+// concat and spread operator
+let firstarr=[1,2,3]
+let secondarr=[4,5,6]
+
+let joinedarr=[firstarr,secondarr]
+joinedarr=firstarr.concat(secondarr)
+console.log(joinedarr)
+
+//spread....
+let joined=[...firstarr,...secondarr]
+console.log(joined)
 
 
-// let a=100
-// let x=(a>50)
-// console.log( +x)
+let arr3=[5,8,10,7,9,11];
+let len=arr3.length;
+console.log(arr3)
+arr3.splice(3,5,'17','19','111')
+console.log(arr3)
 
-//bitwise operator: & | ` ^ << >> >>>
+console.log(arr3.unshift('100'))
+console.log(arr3)
+
+arr3.push('1000')
+console.log(arr3)
 
 
-//user input
-
-// let name=prompt("whats your name")
-
-// console.log('hi',name)
-
-
-let tickets=prompt('how many tickets dpo you want')
-console.log('you should pay',Number (tickets)*20)
-
-let a=prompt("entyer a number")
-console.log(Number(a)+10)
